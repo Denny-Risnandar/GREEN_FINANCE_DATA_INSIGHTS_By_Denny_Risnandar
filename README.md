@@ -29,6 +29,8 @@ GNPV = Σ (CFₜ + Eₜ) / (1 + r)ᵗ - I₀
 ```
 misal kita memiliki sebuah sumber file excel 
 
+https://github.com/Denny-Risnandar/GREEN_FINANCE_DATA_INSIGHTS_By_Denny_Risnandar/blob/main/Financial_Dataset.xlsx
+
 
 
 | Field | Deskripsi |
