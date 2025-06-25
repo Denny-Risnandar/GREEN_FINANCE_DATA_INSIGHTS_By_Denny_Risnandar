@@ -12,7 +12,7 @@ Teori Analisis Prediktif: Bagaimana kita dapat menggunakan data historis untuk m
 
 Dataset Keuangan Hijau: Membedah berbagai variabel dalam dataset yang relevan, mulai dari data finansial, lingkungan, hingga sosial-ekonomi, lengkap dengan regulasi dan acuan akademis.
 
-1. RUMUS Green Net Present Value (GNPV)
+1. Financial Datasheet / RUMUS Green Net Present Value (GNPV)
 
 Mungkin temen - temen masih inget dengan rumah Present Value (PV) dan Future Value (FV) ? yapz ini ampir sama / modifikasi dari rumus tsb.
 jika Future Value (FV) adalah untuk menghitung nilai masa depan, sedangkan present value (PV) untuk menghitung nilai sekarang.
@@ -20,3 +20,29 @@ jika Future Value (FV) adalah untuk menghitung nilai masa depan, sedangkan prese
 PV = FV / (1 + r)^n, di mana PV adalah Nilai Sekarang, FV adalah Nilai Masa Depan, r adalah tingkat diskonto (bunga), dan n adalah jumlah periode waktu. 
 
 FV = PV x (1 + r)^n, dimana FV adalah nilai masa depan, PV: adalah Present Value atau nilai sekarang, r: adalah tingkat bunga per periode, n: adalah jumlah periode waktu. 
+
+Namun untuk Analisis Green Finance maka :
+
+Rumus : 
+```
+GNPV = Σ (CFₜ + Eₜ) / (1 + r)ᵗ - I₀
+```
+misal kita memiliki sebuah sumber file excel 
+
+
+| Field | Deskripsi |
+|-------|-----------|
+| `Investment_Amount` | Total dana yang diinvestasikan dalam proyek (Rp). |
+| `Loan_Interest_Rate` | Suku bunga pinjaman per tahun (%). |
+| `Default_Risk_Score` | Skor risiko gagal bayar (0-100). |
+| `Green_Bond_Spread` | Selisih imbal hasil obligasi hijau dan konvensional (bps). |
+
+📌 *Formula:*
+```math
+GNPV = Σ (CFₜ + Eₜ) / (1 + r)ᵗ - I₀
+```
+
+- Mengukur nilai bersih proyek hijau dengan mempertimbangkan manfaat finansial dan lingkungan.
+- **Proyek ideal**: GNPV > 0
+
+![GNPV Chart](visualizations/gnpv_bar_chart.png)
