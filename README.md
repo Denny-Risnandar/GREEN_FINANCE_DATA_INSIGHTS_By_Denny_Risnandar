@@ -30,19 +30,12 @@ GNPV = Σ (CFₜ + Eₜ) / (1 + r)ᵗ - I₀
 misal kita memiliki sebuah sumber file excel 
 
 
+
 | Field | Deskripsi |
 |-------|-----------|
 | `Investment_Amount` | Total dana yang diinvestasikan dalam proyek (Rp). |
 | `Loan_Interest_Rate` | Suku bunga pinjaman per tahun (%). |
-| `Default_Risk_Score` | Skor risiko gagal bayar (0-100). |
+| `Default_Risk_Score` | Skor prediksi kemungkinan gagal bayar (skala 0-100, dengan 100 menunjukkan risiko tertinggi)
 | `Green_Bond_Spread` | Selisih imbal hasil obligasi hijau dan konvensional (bps). |
 
-📌 *Formula:*
-```math
-GNPV = Σ (CFₜ + Eₜ) / (1 + r)ᵗ - I₀
-```
 
-- Mengukur nilai bersih proyek hijau dengan mempertimbangkan manfaat finansial dan lingkungan.
-- **Proyek ideal**: GNPV > 0
-
-![GNPV Chart](visualizations/gnpv_bar_chart.png)
